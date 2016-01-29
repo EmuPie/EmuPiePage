@@ -1,0 +1,51 @@
+$navBg: #262626;
+$navTxtColor: #dedede;
+$bg: #dedede;
+$splashColor: $navBg;
+
+@mixin sidePadding($size) {
+	padding-left: $size;
+	padding-right: $size;
+}
+
+.navbar {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 10%;
+	background-color: $navBg;
+	box-shadow: 0px 5px 100px #000;
+	@include sidePadding(10px);
+	#pageTitle {
+		color: $navTxtColor;
+	}
+}
+
+.bg {
+	z-index: -1;
+	background-image: url("http://rhombus-tech.net/community_ideas/games_console/zf1.png");
+	background-size: cover;
+	background-position: center;
+	position: fixed;
+	top: 10%;
+	bottom: 0px;
+	left: 30px;
+	right: 0px;
+	.splashHeader {
+		color: $splashColor;
+		border: 2px solid $splashColor;
+		border-radius: 5px;
+		width: auto;
+		font-size: 24px;
+	}
+}
+
+.wrapper {
+	background-color: $bg;
+	position: absolute;
+	top: calc(100% - 100px);
+	left: 0px;
+	right: 0px;
+	box-shadow: 0px -5px 100px #000;
+}

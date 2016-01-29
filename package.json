@@ -1,0 +1,18 @@
+{
+  "name": "EmuPieWebpage",
+  "version": "1.0.0",
+  "description": "EmuPie Webpage",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -o --cors & node server.js"
+  },
+  "author": "solvillan",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.3.1",
+    "chokidar": "^1.4.2",
+    "http-server": "^0.8.5",
+    "livereload": "^0.4.0"
+  }
+}
